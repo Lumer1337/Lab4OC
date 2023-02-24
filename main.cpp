@@ -59,15 +59,15 @@ int main() {
     Stack myStack;   //Создаём объект myStack
     SetConsoleOutputCP(CP_UTF8);
     std::cout << "Пустой ли стэк? " << myStack.isEmpty() << std::endl;  //Возвращает true, тк туда ещё ничего не записали
-    std::cout << "Popped element: " << myStack.pop() << std::endl; //Пытаемся извлечь элемент из стека, в результате чего выводится сообщение об ошибке
+    std::cout << "Попнутый эллемент: " << myStack.pop() << std::endl; //Пытаемся извлечь элемент из стека, в результате чего выводится сообщение об ошибке
     myStack.push(5);  //помещаем элемент 5 в стек
-    std::cout << "Top element: " << myStack.peek() << std::endl;   //печатаем верхний элемент с помощью peek()
+    std::cout << "Верхний элемент стэка: " << myStack.peek() << std::endl;   //печатаем верхний элемент с помощью peek()
     myStack.push(10);  //помещаем элемент 10 в стек
     myStack.push(15);  //помещаем элемент 15 в стек
     myStack.push(20);  //помещаем элемент 20 в стек
-    std::cout << "Popped element: " << myStack.pop() << std::endl;
-    std::cout << "Popped element: " << myStack.pop() << std::endl;//извлекаем два верхних элемента с помощью pop()
-    std::cout << "Is stack empty? " << myStack.isEmpty() << std::endl;
+    std::cout << "Попнутый эллемент: " << myStack.pop() << std::endl;
+    std::cout << "Попнутый эллемент: " << myStack.pop() << std::endl;//извлекаем два верхних элемента с помощью pop()
+    std::cout << "Пустой ли стэк? " << myStack.isEmpty() << std::endl;
     return 0;
 }
 
