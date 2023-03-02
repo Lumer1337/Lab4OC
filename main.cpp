@@ -1,5 +1,4 @@
 #include <iostream>
-#include <windows.h>
 
 class Stack {
 private:
@@ -45,7 +44,7 @@ public:
     int peek() {
         if (topIndex == -1) {
             std::cerr << "Стэк пустой." << std::endl;
-            return -1; // You can choose to handle this error differently
+            return -1;
         }
         return array[topIndex];
     }
@@ -57,7 +56,6 @@ public:
 
 int main() {
     Stack myStack;   //Создаём объект myStack
-    SetConsoleOutputCP(CP_UTF8);
     std::cout << "Пустой ли стэк? " << myStack.isEmpty() << std::endl;  //Возвращает true, тк туда ещё ничего не записали
     std::cout << "Попнутый эллемент: " << myStack.pop() << std::endl; //Пытаемся извлечь элемент из стека, в результате чего выводится сообщение об ошибке
     myStack.push(5);  //помещаем элемент 5 в стек
